@@ -14,9 +14,9 @@ def prepare_data(dataset):
 
 def change_format(A, y, m):
     X = np.hstack((A.todense().astype(np.float32), np.ones((m, 1))))
-    Y = np.array((y + 1) / 2, dtype=int)
+    y = np.array((y - 1), dtype=int)
     X = torch.from_numpy(X).type(torch.FloatTensor)
-    y = torch.from_numpy(Y).type(torch.FloatTensor)
+    y = torch.from_numpy(y).type(torch.FloatTensor)
     return X, y
 
 
