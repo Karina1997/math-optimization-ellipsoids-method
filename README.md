@@ -7,5 +7,5 @@ Our ellipsoid method realisation extends [torch.optimizer.Optimizer](https://pyt
 
 ## Navigation
 
-- [Experiments](ellipsoid_experiment.ipynb)
-- [Ellipsoid method implementation](ellipsoid_method.py)
+- [Experiments](experiment/ellipsoid_experiment.ipynb)
+- [Ellipsoid method implementation](experiment/ellipsoid_method.py)
